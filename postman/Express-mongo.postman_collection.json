@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "388d115f-c27e-48a8-ae76-05316e75029c",
+		"name": "Express-mongo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n    \"Nombre\":\"AdD\",\r\n    \"Apellidos\":\"Galileo\",\r\n    \"Edad\": 555,\r\n    \"Dni\":\"53243423C\",\r\n    \"Cumpleanos\": \"2002-13-05\",\r\n    \"ColorFav\":\"Azu3l\",\r\n    \"Sexo\":\"Hombre\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"Nombre\": \"Francisco\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/60b19c02a42aa791f8fd4311",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"60b19c02a42aa791f8fd4311"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/user/60b19c1f3d6b5282acda5136",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"60b19c1f3d6b5282acda5136"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
